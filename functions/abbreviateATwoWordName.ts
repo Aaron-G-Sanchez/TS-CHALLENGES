@@ -6,5 +6,5 @@ export const abbreviateATwoWordName = (name: string): string => {
   let firstArr = first.split('')
   let lastArr = last.split('')
 
-  return `${firstArr[0].toUpperCase()}.${lastArr[0].toUpperCase()}`
+  return `${firstArr[0]}.${lastArr[0]}`.toUpperCase()
 }
