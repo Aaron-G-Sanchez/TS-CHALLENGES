@@ -5,4 +5,7 @@ import * as funcs from './functions/'
 
 // TODO Add back the other functions from the func dir.
 
-console.log(funcs.abbreviateATwoWordName('chravis bobussy')) // Should return C.B.
+// console.log(funcs.abbreviateATwoWordName('chravis bobussy')) // Should return C.B.
+
+// 05/28/24
+console.log(funcs.convertBoolean(true)) // Should return 'Yes'.
