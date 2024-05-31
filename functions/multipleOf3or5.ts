@@ -1,4 +1,4 @@
-export const multipleOf3or5 = (num: number): number => {
+export const MultipleOf3or5 = (num: number): number => {
   if (num < 0) {
     return 0
   }

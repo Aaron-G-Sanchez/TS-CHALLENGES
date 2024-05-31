@@ -1,6 +1,6 @@
 // 05/27/24 Function written to abbreviate a two word name.
 
-export const abbreviateATwoWordName = (name: string): string => {
+export const AbbreviateATwoWordName = (name: string): string => {
   let [first, last] = name.split(' ')
 
   let firstArr = first.split('')

@@ -1,6 +1,6 @@
-import { multipleOf3or5 } from './multipleOf3or5'
-import { abbreviateATwoWordName } from './abbreviateATwoWordName'
-import { convertBoolean } from './convertBoolean'
+import { MultipleOf3or5 } from './multipleOf3or5'
+import { AbbreviateATwoWordName } from './abbreviateATwoWordName'
+import { ConvertBoolean } from './convertBoolean'
 import { WhoLikesIt } from './whoLikesit'
 
-export { multipleOf3or5, abbreviateATwoWordName, convertBoolean, WhoLikesIt }
+export { MultipleOf3or5, AbbreviateATwoWordName, ConvertBoolean, WhoLikesIt }
