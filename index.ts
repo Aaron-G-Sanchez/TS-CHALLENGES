@@ -8,4 +8,7 @@ import * as funcs from './functions/'
 // console.log(funcs.abbreviateATwoWordName('chravis bobussy')) // Should return C.B.
 
 // 05/28/24
-console.log(funcs.convertBoolean(true)) // Should return 'Yes'.
+// console.log(funcs.convertBoolean(true)) // Should return 'Yes'.
+
+// 05/31/24
+console.log(funcs.WhoLikesIt(['Peter', 'Jacob'])) // Should return "Peter and Jacob like this"
