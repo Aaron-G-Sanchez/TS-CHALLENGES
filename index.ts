@@ -11,4 +11,7 @@ import * as funcs from './functions/'
 // console.log(funcs.ConvertBoolean(true)) // Should return 'Yes'.
 
 // 05/31/24
-console.log(funcs.WhoLikesIt(['Peter', 'Jacob'])) // Should return "Peter and Jacob like this"
+// console.log(funcs.WhoLikesIt(['Peter', 'Jacob'])) // Should return "Peter and Jacob like this"
+
+// 06/01/24
+console.log(funcs.SmallEnough([66, 101], 200)) // Should return 'True'
