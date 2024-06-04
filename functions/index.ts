@@ -3,11 +3,13 @@ import { AbbreviateATwoWordName } from './abbreviateATwoWordName'
 import { ConvertBoolean } from './convertBoolean'
 import { WhoLikesIt } from './whoLikesit'
 import { SmallEnough } from './smallEnough'
+import { InvertValues } from './invertValues'
 
 export {
   MultipleOf3or5,
   AbbreviateATwoWordName,
   ConvertBoolean,
   WhoLikesIt,
-  SmallEnough
+  SmallEnough,
+  InvertValues
 }

@@ -14,4 +14,7 @@ import * as funcs from './functions/'
 // console.log(funcs.WhoLikesIt(['Peter', 'Jacob'])) // Should return "Peter and Jacob like this"
 
 // 06/01/24
-console.log(funcs.SmallEnough([66, 101], 200)) // Should return 'True'
+// console.log(funcs.SmallEnough([66, 101], 200)) // Should return 'True'
+
+//06/03/24
+console.log(funcs.InvertValues([-1, 2, 3, 4, 5])) // Should return [-1, -2, -3, -4, 5]
