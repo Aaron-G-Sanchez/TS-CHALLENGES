@@ -4,6 +4,7 @@ import { ConvertBoolean } from './convertBoolean'
 import { WhoLikesIt } from './whoLikesit'
 import { SmallEnough } from './smallEnough'
 import { InvertValues } from './invertValues'
+import { OppositeNumbers } from './oppositeNumbers'
 
 export {
   MultipleOf3or5,
@@ -11,5 +12,6 @@ export {
   ConvertBoolean,
   WhoLikesIt,
   SmallEnough,
-  InvertValues
+  InvertValues,
+  OppositeNumbers
 }

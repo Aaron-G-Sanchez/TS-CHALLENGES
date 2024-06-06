@@ -17,4 +17,7 @@ import * as funcs from './functions/'
 // console.log(funcs.SmallEnough([66, 101], 200)) // Should return 'True'
 
 //06/03/24
-console.log(funcs.InvertValues([-1, 2, 3, 4, 5])) // Should return [-1, -2, -3, -4, 5]
+// console.log(funcs.InvertValues([-1, 2, 3, 4, 5])) // Should return [-1, -2, -3, -4, 5]
+
+// 06/05/24
+console.log(funcs.OppositeNumbers(-5)) // Should return 5
