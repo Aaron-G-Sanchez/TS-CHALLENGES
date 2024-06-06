@@ -20,4 +20,7 @@ import * as funcs from './functions/'
 // console.log(funcs.InvertValues([-1, 2, 3, 4, 5])) // Should return [-1, -2, -3, -4, 5]
 
 // 06/05/24
-console.log(funcs.OppositeNumbers(-5)) // Should return 5
+// console.log(funcs.OppositeNumbers(-5)) // Should return 5
+
+// 06/06/24
+console.log(funcs.EncodeVowls('hello')) // Should return "h2ll4"
