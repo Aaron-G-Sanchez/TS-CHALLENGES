@@ -23,4 +23,7 @@ import * as funcs from './functions/'
 // console.log(funcs.OppositeNumbers(-5)) // Should return 5
 
 // 06/06/24
-console.log(funcs.EncodeVowls('hello')) // Should return "h2ll4"
+// console.log(funcs.EncodeVowels('hello')) // Should return "h2ll4"
+
+// 06/07/24
+console.log(funcs.DecodeVowels('h2ll4')) // Should return "hello"

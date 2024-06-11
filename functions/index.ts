@@ -5,7 +5,7 @@ import { WhoLikesIt } from './whoLikesit'
 import { SmallEnough } from './smallEnough'
 import { InvertValues } from './invertValues'
 import { OppositeNumbers } from './oppositeNumbers'
-import { EncodeVowls } from './encodeVowels'
+import { EncodeVowels, DecodeVowels } from './encodeVowels'
 
 export {
   MultipleOf3or5,
@@ -15,5 +15,6 @@ export {
   SmallEnough,
   InvertValues,
   OppositeNumbers,
-  EncodeVowls
+  EncodeVowels,
+  DecodeVowels
 }
