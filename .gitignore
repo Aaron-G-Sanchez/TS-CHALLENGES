@@ -1,2 +1,5 @@
 # Notes
 *.txt
+
+# Dependency directories
+node_modules/
