@@ -22,7 +22,7 @@ describe('Abbreviate a two word name function:', () => {
     }
   ]
 
-  test.each(testCases)('$name', ({given, want}) => {
+  test.each(testCases)('$name', ({ given, want }) => {
     expect(funcs.AbbreviateATwoWordName(given)).toBe(want)
   })
 })
@@ -48,7 +48,7 @@ describe('Convert boolean to string function:', () => {
     }
   ]
 
-  test.each(testCases)('$name', ({given, want}) => {
+  test.each(testCases)('$name', ({ given, want }) => {
     expect(funcs.ConvertBoolean(given)).toBe(want)
   })
 })
@@ -63,29 +63,54 @@ describe('Who likes it function:', () => {
 
   const testCases: testCase[] = [
     {
-      name: "[] => no one likes this",
+      name: '[] => no one likes this',
       given: [],
-      want: "no one likes this"
+      want: 'no one likes this'
     },
     {
       name: "['Peter'] => Peter likes this",
-      given: ["Peter"],
-      want: "Peter likes this"
+      given: ['Peter'],
+      want: 'Peter likes this'
     },
     {
       name: "['Jacob', 'Alex'] => Jacob and Alex like this",
-      given: ["Jacob", "Alex"],
-      want: "Jacob and Alex like this"
+      given: ['Jacob', 'Alex'],
+      want: 'Jacob and Alex like this'
     },
     {
       name: "['Alex', 'Jacob', 'Mark', 'Chravis'] => Alex, Jacob and 2 others like this",
-      given: ["Alex", "Jacob", "Mark", "Chravis"],
-      want: "Alex, Jacob and 2 others like this"
+      given: ['Alex', 'Jacob', 'Mark', 'Chravis'],
+      want: 'Alex, Jacob and 2 others like this'
     }
-    
   ]
 
-  test.each(testCases)('$name', ({given, want}) => {
+  test.each(testCases)('$name', ({ given, want }) => {
     expect(funcs.WhoLikesIt(given)).toBe(want)
+  })
+})
+
+// 06/14/24 DetectPangram function should take a phrase and determine if it uses every letter of the alphabet at least once.
+describe('DetectPangram function', () => {
+  type testCase = {
+    name: string
+    given: string
+    want: boolean
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: 'The  quick brown.... => true',
+      given: 'The quick brown fox jumps over the lazy dog',
+      want: true
+    },
+    {
+      name: 'This is a test => false',
+      given: 'This is a test',
+      want: false
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.DetectPangram(given)).toBe(want)
   })
 })

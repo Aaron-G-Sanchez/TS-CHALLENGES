@@ -6,6 +6,7 @@ import { SmallEnough } from './smallEnough'
 import { InvertValues } from './invertValues'
 import { OppositeNumbers } from './oppositeNumbers'
 import { EncodeVowels, DecodeVowels } from './encodeVowels'
+import { DetectPangram } from './detectPangram'
 
 export {
   MultipleOf3or5,
@@ -16,5 +17,6 @@ export {
   InvertValues,
   OppositeNumbers,
   EncodeVowels,
-  DecodeVowels
+  DecodeVowels,
+  DetectPangram
 }
