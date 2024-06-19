@@ -114,3 +114,32 @@ describe('DetectPangram function', () => {
     expect(funcs.DetectPangram(given)).toBe(want)
   })
 })
+
+// 06/19/24 ShortLongShort takes two strings and returns a combination of the two stirings.
+describe('ShortLongShort function', () => {
+  type testCase = {
+    name: string
+    givenOne: string
+    givenTwo: string
+    want: string
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: '1, 22 => 1221',
+      givenOne: '1',
+      givenTwo: '22',
+      want: '1221'
+    },
+    {
+      name: '22, 1 => 1221',
+      givenOne: '22',
+      givenTwo: '1',
+      want: '1221'
+    }
+  ]
+
+  test.each(testCases)('$name', ({ givenOne, givenTwo, want }) => {
+    expect(funcs.ShortLongShort(givenOne, givenTwo)).toBe(want)
+  })
+})
