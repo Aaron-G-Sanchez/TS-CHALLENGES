@@ -143,3 +143,45 @@ describe('ShortLongShort function', () => {
     expect(funcs.ShortLongShort(givenOne, givenTwo)).toBe(want)
   })
 })
+
+// 06/20/24 OddOrEven takes a number and return a string "Odd" or "Even".
+
+describe('OddOrEven function', () => {
+  type testCase = {
+    name: string
+    given: number
+    want: string
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: '1 => Odd',
+      given: 1,
+      want: 'Odd'
+    },
+    {
+      name: '4 => Even',
+      given: 4,
+      want: 'Even'
+    },
+    {
+      name: '3 => Odd',
+      given: 3,
+      want: 'Odd'
+    },
+    {
+      name: '-1 => Odd',
+      given: -1,
+      want: 'Odd'
+    },
+    {
+      name: '-12 => Even',
+      given: -12,
+      want: 'Even'
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.OddOrEven(given)).toBe(want)
+  })
+})

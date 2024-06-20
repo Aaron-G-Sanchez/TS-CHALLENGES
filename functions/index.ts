@@ -8,6 +8,7 @@ import { OppositeNumbers } from './oppositeNumbers'
 import { EncodeVowels, DecodeVowels } from './encodeVowels'
 import { DetectPangram } from './detectPangram'
 import { ShortLongShort } from './shortLongShort'
+import { OddOrEven } from './oddOrEven'
 
 export {
   MultipleOf3or5,
@@ -20,5 +21,6 @@ export {
   EncodeVowels,
   DecodeVowels,
   DetectPangram,
-  ShortLongShort
+  ShortLongShort,
+  OddOrEven
 }
