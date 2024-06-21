@@ -9,6 +9,7 @@ import { EncodeVowels, DecodeVowels } from './encodeVowels'
 import { DetectPangram } from './detectPangram'
 import { ShortLongShort } from './shortLongShort'
 import { OddOrEven } from './oddOrEven'
+import { ToString } from './toString'
 
 export {
   MultipleOf3or5,
@@ -22,5 +23,6 @@ export {
   DecodeVowels,
   DetectPangram,
   ShortLongShort,
-  OddOrEven
+  OddOrEven,
+  ToString
 }

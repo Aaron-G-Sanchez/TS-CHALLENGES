@@ -185,3 +185,29 @@ describe('OddOrEven function', () => {
     expect(funcs.OddOrEven(given)).toBe(want)
   })
 })
+
+// 06/21/24 ToString takes a number and returns the number as a string. (8ku FOR SURE)
+describe('ToString function', () => {
+  type testCase = {
+    name: string
+    given: number
+    want: string
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: '1221 => "1221"',
+      given: 1221,
+      want: '1221'
+    },
+    {
+      name: '87 => "87"',
+      given: 87,
+      want: '87'
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.ToString(given)).toBe(want)
+  })
+})
