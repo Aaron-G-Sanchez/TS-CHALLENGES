@@ -10,6 +10,7 @@ import { DetectPangram } from './detectPangram'
 import { ShortLongShort } from './shortLongShort'
 import { OddOrEven } from './oddOrEven'
 import { ToString } from './toString'
+import { Isogram } from './isogram'
 
 export {
   MultipleOf3or5,
@@ -24,5 +25,6 @@ export {
   DetectPangram,
   ShortLongShort,
   OddOrEven,
-  ToString
+  ToString,
+  Isogram
 }

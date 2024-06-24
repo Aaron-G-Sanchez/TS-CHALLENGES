@@ -211,3 +211,34 @@ describe('ToString function', () => {
     expect(funcs.ToString(given)).toBe(want)
   })
 })
+
+// 06/24/24 Isogram is a function that validates that a string has no repeating letters.
+describe('Isogram function', () => {
+  type testCase = {
+    name: string
+    given: string
+    want: boolean
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: 'Dermatoglyphics => true',
+      given: 'Dermatoglyphics',
+      want: true
+    },
+    {
+      name: 'aba => false',
+      given: 'aba',
+      want: false
+    },
+    {
+      name: 'moOse => false',
+      given: 'moOse',
+      want: false
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.Isogram(given)).toBe(want)
+  })
+})
