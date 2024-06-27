@@ -3,7 +3,6 @@
 
 import * as funcs from './functions/'
 
-
 // 06/01/24
 // console.log(funcs.SmallEnough([66, 101], 200)) // Should return 'True'
 
@@ -17,4 +16,7 @@ import * as funcs from './functions/'
 // console.log(funcs.EncodeVowels('hello')) // Should return "h2ll4"
 
 // 06/07/24
-console.log(funcs.DecodeVowels('h2ll4')) // Should return "hello"
+// console.log(funcs.DecodeVowels('h2ll4')) // Should return "hello"
+
+// 06/26/24 TODO This is a quick test for ReplaceWithAlphabetPosition function.
+console.log(funcs.ReplaceWithAlphabetPosition('The')) // Should return "20 8 5"

@@ -242,3 +242,30 @@ describe('Isogram function', () => {
     expect(funcs.Isogram(given)).toBe(want)
   })
 })
+
+// 06/26/24 ReplaceWithAlphabetPositon function should take a string and return a new string
+// with every letter replaced with its position in the alphabet.
+describe('ReplaceWithAlphabetPositon function', () => {
+  type testCase = {
+    name: string
+    given: string
+    want: string
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: "'The' => '20 8 5'",
+      given: 'The',
+      want: '20 8 5'
+    },
+    {
+      name: "'gg}u+_b,' => '7 7 21 2'",
+      given: 'gg}u+_b,',
+      want: '7 7 21 2'
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.ReplaceWithAlphabetPosition('The')).toBe('20 8 5')
+  })
+})

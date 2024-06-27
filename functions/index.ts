@@ -11,6 +11,7 @@ import { ShortLongShort } from './shortLongShort'
 import { OddOrEven } from './oddOrEven'
 import { ToString } from './toString'
 import { Isogram } from './isogram'
+import { ReplaceWithAlphabetPosition } from './replaceWithAlphabetPosition'
 
 export {
   MultipleOf3or5,
@@ -26,5 +27,6 @@ export {
   ShortLongShort,
   OddOrEven,
   ToString,
-  Isogram
+  Isogram,
+  ReplaceWithAlphabetPosition
 }
