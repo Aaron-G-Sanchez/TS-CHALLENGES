@@ -269,3 +269,30 @@ describe('ReplaceWithAlphabetPositon function', () => {
     expect(funcs.ReplaceWithAlphabetPosition('The')).toBe('20 8 5')
   })
 })
+
+// 06/27/24 FriendOrFoe takes an array of names and returns a list of "Friends" or
+// any name that is exactly 4 letters.
+describe('FriendOrFoe function', () => {
+  type testCase = {
+    name: string
+    given: string[]
+    want: string[]
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: '[Ryan, Kieran, Mark] => [Ryan, Mark]',
+      given: ['Ryan', 'Kieran', 'Mark'],
+      want: ['Ryan', 'Mark']
+    },
+    {
+      name: '[This, Is, A, List, Of, Names] => [This, List]',
+      given: ['This', 'Is', 'A', 'List', 'Of', 'Names'],
+      want: ['This', 'List']
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.FriendOrFoe(given)).toEqual(want)
+  })
+})

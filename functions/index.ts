@@ -12,6 +12,7 @@ import { OddOrEven } from './oddOrEven'
 import { ToString } from './toString'
 import { Isogram } from './isogram'
 import { ReplaceWithAlphabetPosition } from './replaceWithAlphabetPosition'
+import { FriendOrFoe } from './friendOrFoe'
 
 export {
   MultipleOf3or5,
@@ -28,5 +29,6 @@ export {
   OddOrEven,
   ToString,
   Isogram,
-  ReplaceWithAlphabetPosition
+  ReplaceWithAlphabetPosition,
+  FriendOrFoe
 }
