@@ -1,5 +1,7 @@
 // 06/27/24 FrinedOrFoe takes a list of names and returns an array of
 // confirmed friends (names that have a length of 4). (7ku Friend or Foe?)
+
+// TODO: Should replace with the filter array function.
 export const FriendOrFoe = (names: string[]): string[] => {
   let friendArr: string[] = []
 
