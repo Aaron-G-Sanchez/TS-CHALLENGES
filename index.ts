@@ -19,4 +19,10 @@ import * as funcs from './functions/'
 // console.log(funcs.DecodeVowels('h2ll4')) // Should return "hello"
 
 // 06/26/24 TODO This is a quick test for ReplaceWithAlphabetPosition function.
-console.log(funcs.ReplaceWithAlphabetPosition('The')) // Should return "20 8 5"
+// console.log(funcs.ReplaceWithAlphabetPosition('The')) // Should return "20 8 5"
+
+// 06/30/24
+//TODO: Quick test call of the function to test .map functionality.
+console.log(
+  funcs.JadonCasedStrings("How can mirrors be real if our eyes aren't real")
+)

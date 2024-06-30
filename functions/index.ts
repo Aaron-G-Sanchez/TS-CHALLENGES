@@ -13,6 +13,7 @@ import { ToString } from './toString'
 import { Isogram } from './isogram'
 import { ReplaceWithAlphabetPosition } from './replaceWithAlphabetPosition'
 import { FriendOrFoe } from './friendOrFoe'
+import { JadonCasedStrings } from './jadonCasedStrings'
 
 export {
   MultipleOf3or5,
@@ -30,5 +31,6 @@ export {
   ToString,
   Isogram,
   ReplaceWithAlphabetPosition,
-  FriendOrFoe
+  FriendOrFoe,
+  JadonCasedStrings
 }
