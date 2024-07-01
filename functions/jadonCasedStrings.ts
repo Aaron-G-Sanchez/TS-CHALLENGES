@@ -1,14 +1,9 @@
 export const JadonCasedStrings = (str: string): string => {
-  let strArr = str.split(' ')
+  let strArr: string[] = str.split(' ')
 
-  let newArr = strArr
-    .map((word) => {
-      const wordArr = word.split('')
-      let firstChar: string = wordArr[0].toUpperCase()
-      let newWord = firstChar + wordArr.slice(1).join('')
-      return newWord
-    })
-    .join(' ')
+  let newArr: string[] = strArr.map((word) => {
+    return word[0].toUpperCase() + word.substring(1)
+  })
 
-  return newArr
+  return newArr.join(' ')
 }
