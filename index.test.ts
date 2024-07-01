@@ -296,3 +296,29 @@ describe('FriendOrFoe function', () => {
     expect(funcs.FriendOrFoe(given)).toEqual(want)
   })
 })
+
+// 06/3024 JadonCasedStrings takes a string and returns the string with each word capitalized.
+describe('JadonCasedStrings function', () => {
+  type testCase = {
+    name: string
+    given: string
+    want: string
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: 'hello world => Hello World',
+      given: 'hello world',
+      want: 'Hello World'
+    },
+    {
+      name: 'this is a test => This Is A Test',
+      given: 'this is a test',
+      want: 'This Is A Test'
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.JadonCasedStrings(given)).toBe(want)
+  })
+})
