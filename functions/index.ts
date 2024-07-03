@@ -14,6 +14,7 @@ import { Isogram } from './isogram'
 import { ReplaceWithAlphabetPosition } from './replaceWithAlphabetPosition'
 import { FriendOrFoe } from './friendOrFoe'
 import { JadonCasedStrings } from './jadonCasedStrings'
+import { SumOfNumbers } from './sumOfNumbers'
 
 export {
   MultipleOf3or5,
@@ -32,5 +33,6 @@ export {
   Isogram,
   ReplaceWithAlphabetPosition,
   FriendOrFoe,
-  JadonCasedStrings
+  JadonCasedStrings,
+  SumOfNumbers
 }

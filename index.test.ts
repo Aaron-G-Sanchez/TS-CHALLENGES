@@ -297,7 +297,7 @@ describe('FriendOrFoe function', () => {
   })
 })
 
-// 06/3024 JadonCasedStrings takes a string and returns the string with each word capitalized.
+// 06/30/24 JadonCasedStrings takes a string and returns the string with each word capitalized.
 describe('JadonCasedStrings function', () => {
   type testCase = {
     name: string
@@ -320,5 +320,41 @@ describe('JadonCasedStrings function', () => {
 
   test.each(testCases)('$name', ({ given, want }) => {
     expect(funcs.JadonCasedStrings(given)).toBe(want)
+  })
+})
+
+//  07/02/24 SumOfNumbers takes two numbers and return the sum of every number
+//  between and including the given numbers.
+describe('SumOfNumbers function', () => {
+  type testCase = {
+    name: string
+    givenOne: number
+    givenTwo: number
+    want: number
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: '(-1, 1) => -1 + 0 +1 = 0',
+      givenOne: -1,
+      givenTwo: 1,
+      want: 0
+    },
+    {
+      name: '(5, 0) => 0 + 1 + ... + 5 = 15',
+      givenOne: 5,
+      givenTwo: 0,
+      want: 15
+    },
+    {
+      name: '(-1, 2) => -1 + 0 + 1 + 2 = 2',
+      givenOne: -1,
+      givenTwo: 2,
+      want: 2
+    }
+  ]
+
+  test.each(testCases)('$name', ({ givenOne, givenTwo, want }) => {
+    expect(funcs.SumOfNumbers(givenOne, givenTwo)).toBe(want)
   })
 })
