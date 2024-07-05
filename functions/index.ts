@@ -15,6 +15,7 @@ import { ReplaceWithAlphabetPosition } from './replaceWithAlphabetPosition'
 import { FriendOrFoe } from './friendOrFoe'
 import { JadonCasedStrings } from './jadonCasedStrings'
 import { SumOfNumbers } from './sumOfNumbers'
+import { TwoToOne } from './twoToOne'
 
 export {
   MultipleOf3or5,
@@ -34,5 +35,6 @@ export {
   ReplaceWithAlphabetPosition,
   FriendOrFoe,
   JadonCasedStrings,
-  SumOfNumbers
+  SumOfNumbers,
+  TwoToOne
 }

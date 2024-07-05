@@ -358,3 +358,27 @@ describe('SumOfNumbers function', () => {
     expect(funcs.SumOfNumbers(givenOne, givenTwo)).toBe(want)
   })
 })
+
+// 07/05/24 TwoToOne takes two strings and returns the longest possible sorted string
+// using only unique letters from each string.
+describe('TwoToOne function', () => {
+  type testCase = {
+    name: string
+    givenOne: string
+    givenTwo: string
+    want: string
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: 'xxa + dxbc => abcdx',
+      givenOne: 'xxa',
+      givenTwo: 'dxbc',
+      want: 'abcdx'
+    }
+  ]
+
+  test.each(testCases)('$name', ({ givenOne, givenTwo, want }) => {
+    expect(funcs.TwoToOne(givenOne, givenTwo)).toBe(want)
+  })
+})
