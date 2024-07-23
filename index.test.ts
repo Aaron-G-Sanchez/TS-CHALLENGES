@@ -382,3 +382,29 @@ describe('TwoToOne function', () => {
     expect(funcs.TwoToOne(givenOne, givenTwo)).toBe(want)
   })
 })
+
+// 07/23/24 RemoveFirstAndLast removes the first and last characters from a string. (Needed the commit lol)
+describe('RemoveFirstAndLast', () => {
+  type testCase = {
+    name: string
+    given: string
+    want: string
+  }
+
+  const testCases: testCase[] = [
+    {
+      name: 'name => am',
+      given: 'name',
+      want: 'am'
+    },
+    {
+      name: 'eloquent => loquen',
+      given: 'eloquent',
+      want: 'loquen'
+    }
+  ]
+
+  test.each(testCases)('$name', ({ given, want }) => {
+    expect(funcs.RemoveFirstAndLast(given)).toBe(want)
+  })
+})

@@ -16,6 +16,7 @@ import { FriendOrFoe } from './friendOrFoe'
 import { JadonCasedStrings } from './jadonCasedStrings'
 import { SumOfNumbers } from './sumOfNumbers'
 import { TwoToOne } from './twoToOne'
+import { RemoveFirstAndLast } from './removeFirstAndLast'
 
 export {
   MultipleOf3or5,
@@ -36,5 +37,6 @@ export {
   FriendOrFoe,
   JadonCasedStrings,
   SumOfNumbers,
-  TwoToOne
+  TwoToOne,
+  RemoveFirstAndLast
 }
